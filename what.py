@@ -11,17 +11,13 @@ time.sleep(15)  # time to scan QR
 
 # Contacts or group names
 recipients = [
-    "+917039330622",       
-     "Decimal",
-     "X Batch AN-A",           
-     "+918828301227",
      "SY AN-A Unofficial"
 ]
 
 # Message to send
-message = ("I am a chatbot made by ARGIgaheartz.\n"
+message = ("I am a chatbot made by .\n"
            "Here’s what he wants to say:\n"
-           "'Study for CT guys or we are gonna cooked in exam.'")
+           "'Study for '")
 
 def send_message(recipient):
     
