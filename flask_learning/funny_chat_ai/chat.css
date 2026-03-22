@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 18, 29);
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgba(125, 243, 243, 0.663);
+    border: 3px solid rgb(157, 255, 240);
+    border-radius: 16px;
+}
+
+input {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+   align-items: right;
+    margin-top: 20px;
+}
+#main.user {
+    font-size: 18px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    align-items: left;
+    margin-top: 20px;
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#chat {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    align-items: left;
+    margin-top: 20px;
+    
+}
+
+  #loader {
+            width: 60px;
+            height: 60px;
+            border: 6px solid #0cffff;
+            border-top-color: #13353e;
+            border-radius: 50%;
+            animation: spin 3s linear infinite, hideLoader 0s 4s forwards;
+            margin: 140px auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+            
+        }
+
+        @keyframes hideLoader {
+            to { display: none; }
+            
+        
+        }
+#loader2 {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    animation: showOverlay 3s linear, hideOverlay 0s 4s forwards;
+     position: absolute;
+     top: 0;
+     left: 0;
+
+}
+      @keyframes showOverlay {
+   
+    to { opacity: 1; visibility: visible; }
+}
+
+@keyframes hideOverlay {
+    
+    to { opacity: 0; visibility: hidden; }
+}
