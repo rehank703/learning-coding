@@ -1,13 +1,9 @@
 from flask import Flask, render_template, request
-
 app = Flask(__name__)
-
 @app.route("/", methods=["GET", "POST"])
 def calculator():
     result = None
-
     if request.method == "POST":
-        
         num1 = request.form["num1"]
         num2 = request.form["num2"]
         operation = request.form["operation"]
